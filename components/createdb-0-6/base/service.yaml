@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: createdb-0-6
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: createdb-0-6
+    app.kubernetes.io/part-of: trillian-1-0-gamma
+  name: createdb-0-6
+spec:
+  ports:
+  - name: "8080"
+    port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: createdb-0-6
+status:
+  loadBalancer: {}
