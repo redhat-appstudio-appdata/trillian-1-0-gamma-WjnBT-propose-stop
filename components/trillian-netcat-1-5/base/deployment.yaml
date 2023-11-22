@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: trillian-netcat-1-5
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-netcat-1-5@sha256:933bd75c4acaf69fd8c8735ea4953a36ae766f1b7a6b2ddfac728bf13f81c016
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-netcat-1-5@sha256:22b3d38783d2ec51a2898ee54aed562d9e71f54fd6098c8bf85f303ebfd4c283
         name: my-go
         ports:
         - containerPort: 8081
