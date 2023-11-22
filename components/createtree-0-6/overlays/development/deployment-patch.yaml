@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: createtree-0-6
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/createtree-0-6@sha256:864a3cb5a2930844a84e1da6ede2a140710bab997dff8f62fc77be0eb5496008
+        name: my-go
+        resources: {}
+status: {}
