@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: redis-0-6
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: redis-0-6
+    app.kubernetes.io/part-of: trillian-1-0-gamma
+  name: redis-0-6
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: go-app
+      app.kubernetes.io/instance: redis-0-6
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: go-app
+        app.kubernetes.io/instance: redis-0-6
+    spec:
+      containers:
+      - image: go-image:latest
+        name: my-go
+        ports:
+        - containerPort: 8081
+          name: http
+          protocol: TCP
+        - containerPort: 6379
+        resources:
+          requests:
+            cpu: 10m
+            memory: 10Mi
+status: {}
