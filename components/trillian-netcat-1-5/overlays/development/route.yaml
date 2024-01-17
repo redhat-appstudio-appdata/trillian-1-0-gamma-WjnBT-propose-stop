@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: trillian-netcat-1-5
     app.kubernetes.io/part-of: trillian-1-0-gamma
-  name: trillian-netcat-1-5atg8
+  name: trillian-netcat-1-5aave
 spec:
   path: /
   port:
