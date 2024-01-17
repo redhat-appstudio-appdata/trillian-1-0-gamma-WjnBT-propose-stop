@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: createtree-0-6
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
