@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: trillian-database-1-5
     app.kubernetes.io/part-of: trillian-1-0-gamma
-  name: trillian-database-1-53vdh
+  name: trillian-database-1-5c8v8
 spec:
   path: /
   port:

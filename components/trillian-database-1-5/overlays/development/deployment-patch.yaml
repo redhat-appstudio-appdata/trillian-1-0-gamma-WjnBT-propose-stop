@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: trillian-database-1-5
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
