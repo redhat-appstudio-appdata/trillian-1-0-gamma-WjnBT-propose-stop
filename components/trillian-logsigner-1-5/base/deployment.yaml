@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: trillian-1-0-gamma
   name: trillian-logsigner-1-5
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: trillian-logsigner-1-5
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-logsigner-1-5@sha256:1fe70d203d112015dc14b893c8e4af61f4a430c5736b798c6db90e800eab856d
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-logsigner-1-5@sha256:04bf51328a940965a4cf3ca7c4b188bf2861c91f639a77b4691733881b82dd35
         name: my-go
         ports:
         - containerPort: 8081
