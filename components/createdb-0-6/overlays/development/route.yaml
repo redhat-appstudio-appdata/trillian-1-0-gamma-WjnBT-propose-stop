@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: createdb-0-6
     app.kubernetes.io/part-of: trillian-1-0-gamma
-  name: createdb-0-6keby
+  name: createdb-0-64hjp
 spec:
   path: /
   port:
