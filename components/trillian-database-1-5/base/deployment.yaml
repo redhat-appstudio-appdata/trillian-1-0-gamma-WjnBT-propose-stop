@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: trillian-1-0-gamma
   name: trillian-database-1-5
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: trillian-database-1-5
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-database-1-5@sha256:6255874c30bda2314bc383d1c24c3e284f1f7ec400dbcafc264e63b1cc7d686f
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-database-1-5@sha256:cfb2eb3e5cb2071790c3932991bd6931c2f6eac5626907f928bdc677a70b55e8
         name: my-go
         ports:
         - containerPort: 8081
