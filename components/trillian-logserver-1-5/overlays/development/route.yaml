@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: trillian-logserver-1-5
     app.kubernetes.io/part-of: trillian-1-0-gamma
-  name: trillian-logserver-1-5xonv
+  name: trillian-logserver-1-5i8yw
 spec:
   path: /
   port:

@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: trillian-logserver-1-5
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -11,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-logserver-1-5@sha256:e1ec119c4caadecb80359edb4c06c2558c9dedcb965203f5d56277ff297d90f1
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/trillian-logserver-1-5@sha256:56a3a063e5e0729a0bb72eb3f4233b00cb0f4fee22c1df3f01e406b52824ed41
         name: my-go
         resources: {}
 status: {}
