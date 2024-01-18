@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: trillian-1-0-gamma
   name: createdb-0-6
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: createdb-0-6
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/createdb-0-6@sha256:0a698359ad09cd0ec5f6813e7c2532614eb5a92448863ebf92d024157a5fc564
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/createdb-0-6@sha256:a3eeb09e05347520bdcb16edadb0a219b282507170df0e4d135ef8bdcc255858
         name: my-go
         ports:
         - containerPort: 8081
