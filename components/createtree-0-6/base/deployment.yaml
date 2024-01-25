@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: createtree-0-6
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/createtree-0-6@sha256:bab790f0b7f675eb24eef1ff743b9355171651fdfa355e593e464e96ddb570e0
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian-1-0-gamma/createtree-0-6@sha256:0293750aba7731b356cbcea6c352b296a118d58289455a7d9869d53ad34b47b3
         name: my-go
         ports:
         - containerPort: 8081
