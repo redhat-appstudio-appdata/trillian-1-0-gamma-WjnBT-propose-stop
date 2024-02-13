@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: trillian-1-0-gamma
   name: trillian-logserver-1-5
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
